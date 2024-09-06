@@ -22,7 +22,7 @@ const  crypto =require("crypto");
 const { Meeting } =require("./models/meeting.js");
 
 const PORT =process.env.PORT ||8000;
-const  url ="mongodb://127.0.0.1:27017/Video_call";
+const  url ="mongodb+srv://prasun12:prasun12@cluster0.pmhtmno.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 app.use(cors());
 app.use(bodyparser.json({ limit: "40kb" }));
 app.use(bodyparser.urlencoded({ limit: "40kb", extended: true }));
